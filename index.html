@@ -8,9 +8,103 @@
   </head>
   <body>
     <main>
-      <section>
-        <div></div>
+      <h1>Tic-Tac-Toe</h1>
+      <section id="gameboard">
+        <form id="spaces">
+          <div class="space topLeft">
+            <input
+              class="inputMove row1 col1 diag1"
+              id="space1"
+              type="text"
+              name="inputMove"
+            />
+          </div>
+          <div class="space">
+            <input
+              class="inputMove row1 col2"
+              id="space2"
+              type="text"
+              name="inputMove"
+            />
+          </div>
+          <div class="space topRight">
+            <input
+              class="inputMove row1 col3 diag2"
+              id="space3"
+              type="text"
+              name="inputMove"
+            />
+          </div>
+          <div class="space">
+            <input
+              class="inputMove row2 col1"
+              id="space4"
+              type="text"
+              name="inputMove"
+            />
+          </div>
+          <div class="space">
+            <input
+              class="inputMove row2 col2 diag1 diag2"
+              id="space5"
+              type="text"
+              name="inputMove"
+            />
+          </div>
+          <div class="space">
+            <input
+              class="inputMove row2 col3"
+              id="space6"
+              type="text"
+              name="inputMove"
+            />
+          </div>
+          <div class="space bottomLeft">
+            <input
+              class="inputMove row3 col1 diag2"
+              id="space7"
+              type="text"
+              name="inputMove"
+            />
+          </div>
+          <div class="space">
+            <input
+              class="inputMove row3 col2"
+              id="space8"
+              type="text"
+              name="inputMove"
+            />
+          </div>
+          <div class="space bottomRight">
+            <input
+              class="inputMove row3 col3 diag1"
+              id="space9"
+              type="text"
+              name="inputMove"
+            />
+          </div>
+        </form>
       </section>
+      <h2 id="gameStatus"></h2>
+      <button id="play">PLAY</button>
+      <section id="player1">
+        <div class="title">Player 1</div>
+        <form action="" id="form1">
+          <input type="text" name="name" id="name1" />
+          <button class="submit" type="submit">submit</button>
+        </form>
+        <div class="cardBody"></div>
+      </section>
+      <section id="player2">
+        <div class="title">Player 2</div>
+        <form action="" id="form2">
+          <input type="text" name="name" id="name2" />
+          <button class="submit" type="submit">submit</button>
+        </form>
+        <div class="cardBody"></div>
+      </section>
+
+      <script src="index.js"></script>
     </main>
   </body>
 </html>
